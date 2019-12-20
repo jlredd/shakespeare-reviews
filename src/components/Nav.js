@@ -150,11 +150,6 @@ const useStyles = makeStyles(theme => ({
   },
   logo: {
     padding: 16,
-    
-    '&:hover': {
-      cursor: 'pointer'
-    },
-
   },
   menuIcon: {
     [theme.breakpoints.up('lg')]: {

@@ -135,7 +135,7 @@ const Page = ({ reviews, loading, setReviewsPerPage, setFilterByRating, reviewsP
                       null}
                 </Typography>
               </CardContent>
-              {showReviews[i] && showReviews[i].review.length >= 50 ?
+              {showReviews[i] && showReviews[i].review.length >= 100 ?
                 <CardActions className={classes.pd0}>
                   <IconButton
                     name={i}
