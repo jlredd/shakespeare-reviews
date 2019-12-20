@@ -49,7 +49,7 @@ export default Home
 const useStyles = makeStyles(theme => ({
   mainContainer: {
     width: '100%',
-    maxHeight: '92vh',
+    maxHeight: '82vh',
 
     display: 'flex',
     justifyContent: 'center',
@@ -172,7 +172,7 @@ const useStyles = makeStyles(theme => ({
     opacity: 0,
     position: 'absolute',
     top: '50%',
-    left: '25%',
+    left: '5%',
 
     animation: '$slide-in-top .65s ease-out forwards',
     animationDelay: '.15s',
@@ -248,7 +248,7 @@ const useStyles = makeStyles(theme => ({
     opacity: 0,
     position: 'absolute',
     top: '10%',
-    right: '-20%',
+    right: '2%',
 
     animation: '$slide-in-right .25s ease-out forwards',
     animationDelay: '.75s',
@@ -267,7 +267,7 @@ const useStyles = makeStyles(theme => ({
     opacity: 0,
     position: 'absolute',
     bottom: '20%',
-    right: '-10%',
+    right: '1%',
 
     animation: '$slide-in-left .15s ease-out forwards',
     animationDelay: '.9s',
@@ -304,8 +304,8 @@ const useStyles = makeStyles(theme => ({
   reviewImgNine: {
     opacity: 0,
     position: 'absolute',
-    bottom: -25,
-    right: -50,
+    bottom: 0,
+    right: 0,
 
     animation: '$slide-in-right .15s ease-out forwards',
     animationDelay: '1.2s',
@@ -324,7 +324,7 @@ const useStyles = makeStyles(theme => ({
     opacity: 0,
     position: 'absolute',
     bottom: '60%',
-    right: -25,
+    right: 3,
 
     animation: '$slide-in-right .15s ease-out forwards',
     animationDelay: '1.35s',
@@ -343,7 +343,7 @@ const useStyles = makeStyles(theme => ({
     opacity: 0,
     position: 'absolute',
     bottom: '40%',
-    right: -20,
+    right: 5,
 
     animation: '$slide-in-right .15s ease-out forwards',
     animationDelay: '1.5s',

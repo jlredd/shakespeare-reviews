@@ -7,14 +7,16 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 
 import Nav from './components/Nav';
 import routes from './util/routes';
-// import Reviews from './components/Reviews';
+
+import { makeStyles } from '@material-ui/core/styles';
 
 const App = () => {
+  const classes = useStyles();
 
   return (
     <HashRouter>
       <ThemeProvider theme={theme}>
-        <div className="App">
+        <div className={`App ${classes.mainContainer}`}>
           <CssBaseline />
           <Nav />
           { routes }
@@ -25,3 +27,7 @@ const App = () => {
 }
 
 export default App;
+
+const useStyles = makeStyles(theme => ({
+  mainContainer: '100%'
+}))
