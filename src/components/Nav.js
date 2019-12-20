@@ -101,6 +101,7 @@ const Nav = () => {
         <Link to='/' className={classes.link}>
           <Button
             size='large'
+            className={classes.link}
           >
             Home
           </Button>
@@ -108,6 +109,7 @@ const Nav = () => {
         <Link to='/reviews' className={classes.link}>
           <Button
             size='large'
+            className={classes.link}
           >
             Reviews
           </Button>
@@ -149,7 +151,13 @@ const useStyles = makeStyles(theme => ({
     }
   },
   logo: {
+    fontFamily: "'Girassol', cursive",
+
     padding: 16,
+
+    [theme.breakpoints.up('lg')]: {
+      padding: 64
+    }
   },
   menuIcon: {
     [theme.breakpoints.up('lg')]: {
@@ -172,7 +180,7 @@ const useStyles = makeStyles(theme => ({
     display: 'none',
 
     [theme.breakpoints.up('lg')]: {
-      width: '35%',
+      width: '25%',
 
       display: 'flex',
       justifyContent: 'space-evenly',
@@ -182,5 +190,11 @@ const useStyles = makeStyles(theme => ({
   link: {
     color: 'black',
     textDecoration: 'none',
+
+    
+    fontFamily: "'Girassol', cursive",
+
+    
+    fontSize: 24,
   }
 }))
